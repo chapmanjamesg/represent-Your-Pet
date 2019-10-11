@@ -11,9 +11,20 @@ const pet = {
     },
     pant: function(){
         window.alert('pant pant pant')
+    },
+    favoriteToys: [],
+    play: function(toy){
+        if(toy.includes('chewy')){
+            this.favoriteToys.push(toy)
+        }
     }
 }
 
-pet.bark()
-pet.whine()
-pet.pant()
+// pet.bark()
+// pet.whine()
+// pet.pant()
+
+pet.play('chewy bones')
+pet.play('chewy squirrel')
+
+console.log(pet.favoriteToys)
